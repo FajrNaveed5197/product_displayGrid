@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./products.css";
 import img1 from "../img1.jpeg";
 import img2 from "../img2.jpeg";
@@ -15,12 +16,12 @@ import shoe8 from "../components/images/shoe8.PNG";
 const Products = () => {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-4 ">
-          <div className="card card1 ">
-            <div className="card-body  ">
+      <div className="row" style={{ display: "flex", flexWrap: "wrap" }}>
+        <div className="col-md-4 ">
+          <div className="card card1">
+            <div className="card-body">
               <div className="row" style={{ margin: 0, padding: 0 }}>
-                <div className="col-6" style={{ padding: 0 }}>
+                <div className="col-6 md-3"  style={{ padding: 0 }}>
                   <div
                     className="card"
                     style={{ border: "none", outline: 0, borderRadius: 0 }}
@@ -35,7 +36,7 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="col-6" style={{ padding: 0 }}>
+                <div className="col-6 md-3" style={{ padding: 0 }}>
                   <div className="card" style={{ border: "none" }}>
                     <div className="card-body">
                       <img
@@ -47,7 +48,6 @@ const Products = () => {
                   </div>
 
                   <div className="row" style={{ margin: 0, padding: 0 }}>
-                    {" "}
                     <div className="col-12" style={{ padding: 0 }}>
                       <div className="card" style={{ border: "none" }}>
                         <div className="card-body">
@@ -59,7 +59,6 @@ const Products = () => {
                         </div>
                       </div>
                     </div>
-                  
                   </div>
                 </div>
               </div>
@@ -67,7 +66,7 @@ const Products = () => {
           </div>
         </div>
 
-        <div className="col-8">
+        <div className="col-md-8">
           <div className="card card2">
             <div className="card-body">
               <h1>Special Shoes With Offers</h1>
@@ -82,10 +81,10 @@ const Products = () => {
                 durability, but a touch of elegance to every stride.
               </p>
 
-              <div className="row">
-                <div className="col-3">
+              <div className="row" style={{ display: "flex", flexWrap: "wrap" }}>
+                <div className="col-lg-3">
                   <div className="card">
-                    <div className="card-body ">
+                    <div className="card-body">
                       <span
                         class="badge salebadge"
                         style={{
@@ -123,14 +122,16 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="col-3">
+                <div className="col-lg-3">
                   <div className="card">
-                    <div className="card-body ">
+                    <div className="card-body">
+                
                       <img
                         src={shoe2}
-                        alt="s2"
+                        alt="s1"
                         style={{ height: "24vh", width: "100%" }}
                       />
+
                       <div
                         class="d-flex justify-content-between mb-2"
                         style={{ fontSize: "small" }}
@@ -151,14 +152,16 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="col-3">
+                <div className="col-lg-3">
                   <div className="card">
-                    <div className="card-body ">
+                    <div className="card-body">
+                
                       <img
                         src={shoe3}
-                        alt="s2"
+                        alt="s1"
                         style={{ height: "24vh", width: "100%" }}
                       />
+
                       <div
                         class="d-flex justify-content-between mb-2"
                         style={{ fontSize: "small" }}
@@ -179,14 +182,16 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="col-3">
+                <div className="col-lg-3">
                   <div className="card">
-                    <div className="card-body ">
+                    <div className="card-body">
+                
                       <img
                         src={shoe4}
-                        alt="s2"
+                        alt="s1"
                         style={{ height: "24vh", width: "100%" }}
                       />
+
                       <div
                         class="d-flex justify-content-between mb-2"
                         style={{ fontSize: "small" }}
@@ -206,68 +211,22 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
+
               </div>
 
-              <div className="row  ">
-                <div className="col-3">
-                  <div className="card">
-                    <div className="card-body ">
-                      <img
-                        src={shoe5}
-                        alt="s2"
-                        style={{ height: "24vh", width: "100%" }}
-                      />
-                      <div
-                        class="d-flex justify-content-between mb-2"
-                        style={{ fontSize: "small" }}
-                      >
-                        <p class="text-muted mb-0">LIFESTYLE </p>
-                        <div class="ms-auto text-warning">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                        </div>
-                      </div>
-                      <p>
-                        <b>MEN SHOES ON 23X, NEW PRODUCT</b>
-                      </p>
-                    </div>
-                  </div>
-                </div>
 
-                <div className="col-3">
-                  <div className="card">
-                    <div className="card-body ">
-                      <img
-                        src={shoe6}
-                        alt="s2"
-                        style={{ height: "24vh", width: "100%" }}
-                      />
-                      <div
-                        class="d-flex justify-content-between mb-2"
-                        style={{ fontSize: "small" }}
-                      >
-                        <p class="text-muted mb-0">LIFESTYLE </p>
-                        <div class="ms-auto text-warning">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                        </div>
-                      </div>
-                      <p>
-                        <b>MEN SHOES ON 23X, NEW PRODUCT</b>
-                      </p>
-                    </div>
-                  </div>
-                </div>
 
-                <div className="col-3">
+
+
+
+
+
+
+
+              <div className="row" style={{ display: "flex", flexWrap: "wrap" }}>
+                <div className="col-lg-3">
                   <div className="card">
-                    <div className="card-body ">
+                    <div className="card-body">
                       <span
                         class="badge salebadge"
                         style={{
@@ -280,10 +239,11 @@ const Products = () => {
                         <span class="badge-content">25% OFF</span>
                       </span>
                       <img
-                        src={shoe7}
-                        alt="s2"
+                        src={shoe5}
+                        alt="s1"
                         style={{ height: "24vh", width: "100%" }}
                       />
+
                       <div
                         class="d-flex justify-content-between mb-2"
                         style={{ fontSize: "small" }}
@@ -304,14 +264,16 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="col-3">
+                <div className="col-lg-3">
                   <div className="card">
-                    <div className="card-body ">
+                    <div className="card-body">
+                
                       <img
-                        src={shoe8}
-                        alt="s2"
+                        src={shoe6}
+                        alt="s1"
                         style={{ height: "24vh", width: "100%" }}
                       />
+
                       <div
                         class="d-flex justify-content-between mb-2"
                         style={{ fontSize: "small" }}
@@ -331,7 +293,71 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
+
+                <div className="col-lg-3">
+                  <div className="card">
+                    <div className="card-body">
+                
+                      <img
+                        src={shoe7}
+                        alt="s1"
+                        style={{ height: "24vh", width: "100%" }}
+                      />
+
+                      <div
+                        class="d-flex justify-content-between mb-2"
+                        style={{ fontSize: "small" }}
+                      >
+                        <p class="text-muted mb-0">LIFESTYLE </p>
+                        <div class="ms-auto text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                      <p>
+                        <b>MEN SHOES ON 23X, NEW PRODUCT</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-3">
+                  <div className="card">
+                    <div className="card-body">
+                
+                      <img
+                        src={shoe8}
+                        alt="s1"
+                        style={{ height: "24vh", width: "100%" }}
+                      />
+
+                      <div
+                        class="d-flex justify-content-between mb-2"
+                        style={{ fontSize: "small" }}
+                      >
+                        <p class="text-muted mb-0">LIFESTYLE </p>
+                        <div class="ms-auto text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                      <p>
+                        <b>MEN SHOES ON 23X, NEW PRODUCT</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+
+
+
             </div>
           </div>
         </div>
